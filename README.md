@@ -68,9 +68,9 @@ This part takes quite some time.
 
 <br>
 
-<ins> Step 1 </ins>: ```sudo apt update --fix-missing```
+<ins> Step 1 </ins>: ```sudo apt update && apt list --upgradable```
 
-<ins> Step 2 </ins>: ```sudo apt upgrade -y```
+<ins> Step 2 </ins>: ```sudo apt upgrade --fix-missing```
 
 <ins> Step 3 </ins>: ```sudo reboot```
 
