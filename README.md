@@ -98,17 +98,19 @@ This part takes quite some time.
 
 <ins> Step 4 </ins>: ```sudo apt install python3-opencv```
 
-<ins> Step 5 </ins>: ```sudo nano /boot/config.txt```
+<ins> Step 5 </ins>: ```sudo apt-get install libopencv-dev```
 
-<ins> Step 6 </ins>: Add line ```dtoverlay=arducam``` at the end
+<ins> Step 6 </ins>: ```sudo nano /boot/config.txt```
 
-<ins> Step 7 </ins>: ```sudo reboot```
+<ins> Step 7 </ins>: Add line ```dtoverlay=arducam``` at the end
 
-<ins> Step 8 </ins>: ```pip install -U numpy```
+<ins> Step 8 </ins>: ```sudo reboot```
 
-<ins> Step 9 </ins>: ```pip install --upgrade pip```
+<ins> Step 9 </ins>: ```pip install -U numpy```
 
-<ins> Step 10 </ins>: ```vcgencmd get_camera``` should show detected = 1 (detected=0 means the camera is not detected).
+<ins> Step 10 </ins>: ```pip install --upgrade pip```
+
+<ins> Step 11 </ins>: ```vcgencmd get_camera``` should show detected = 1 (detected=0 means the camera is not detected).
 
 ![](assets/test_cam.png)
 
